@@ -131,8 +131,8 @@ function HeroSection16() {
           </div>
         </Collapse>
       </Navbar>
-      <header className="bg-white p-8 ">
-        <div className="grid mt-16  w-full mb-20 ">
+      <header className="bg-white h-screen p-8">
+        <div className="grid mt-16  w-full  ">
           <div className="container mx-auto px-4 text-center">
             <Typography
               variant="h1"

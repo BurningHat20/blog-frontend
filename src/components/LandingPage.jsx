@@ -34,6 +34,7 @@ function NavItem({ children }) {
 
 function HeroSection16() {
   const [open, setOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
   const handleOpen = () => setOpen((cur) => !cur);
 
   React.useEffect(() => {
@@ -41,11 +42,25 @@ function HeroSection16() {
       "resize",
       () => window.innerWidth >= 960 && setOpen(false)
     );
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    });
   }, []);
 
   return (
     <>
-      <Navbar shadow={false} fullWidth className="border-0">
+      <Navbar
+        shadow={false}
+        fullWidth
+        className={`border-0 sticky top-0 z-50 ${
+          isScrolled ? "shadow-lg" : ""
+        }`}
+      >
         <div className="container mx-auto flex items-center justify-between">
           <Typography
             color="blue-gray"
@@ -116,8 +131,8 @@ function HeroSection16() {
           </div>
         </Collapse>
       </Navbar>
-      <header className="bg-white p-8">
-        <div className="grid mt-16  w-full h-screen ">
+      <header className="bg-white p-8 ">
+        <div className="grid mt-16  w-full mb-20 ">
           <div className="container mx-auto px-4 text-center">
             <Typography
               variant="h1"

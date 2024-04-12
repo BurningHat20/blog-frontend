@@ -2,8 +2,8 @@
 
 <div align="center">
   <img src="https://img.shields.io/github/license/BurningHat20/blog-frontend" alt="License">
-  <img src="https://img.shields.io/github/issues/your-username/your-repository" alt="Issues">
-  <img src="https://img.shields.io/github/stars/your-username/your-repository" alt="Stars">
+  <img src="https://img.shields.io/github/issues/BurningHat20/blog-frontend" alt="Issues">
+  <img src="https://img.shields.io/github/stars/BurningHat20/blog-frontend" alt="Stars">
 </div>
 
 <p align="center">

@@ -8,12 +8,13 @@ import {
   Input,
 } from "@material-tailwind/react";
 import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
+  HomeIcon,
+  UserIcon,
+  StarIcon,
+  EnvelopeIcon,
 } from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Logo from "../assets/stack.png";
 
 function NavItem({ children }) {
   return (
@@ -46,25 +47,29 @@ function HeroSection16() {
     <>
       <Navbar shadow={false} fullWidth className="border-0">
         <div className="container mx-auto flex items-center justify-between">
-          <Typography color="blue-gray" className="text-lg font-bold">
-            Material Tailwind
+          <Typography
+            color="blue-gray"
+            className="text-lg flex gap-3 items-center justify-between font-bold"
+          >
+            <img src={Logo} alt="logo" className="h-8 w-8" />
+            Stack Spot
           </Typography>
           <ul className="ml-10 hidden items-center gap-6 lg:flex">
             <NavItem>
-              <RectangleStackIcon className="h-5 w-5" />
-              Pages
+              <HomeIcon className="h-5 w-5" />
+              Home
             </NavItem>
             <NavItem>
-              <UserCircleIcon className="h-5 w-5" />
-              Account
+              <UserIcon className="h-5 w-5" />
+              About Us
             </NavItem>
             <NavItem>
-              <Squares2X2Icon className="h-5 w-5" />
-              Blocks
+              <StarIcon className="h-5 w-5" />
+              Testimonial
             </NavItem>
             <NavItem>
-              <CommandLineIcon className="h-5 w-5" />
-              Docs
+              <EnvelopeIcon className="h-5 w-5" />
+              Contact Us
             </NavItem>
           </ul>
           <div className="hidden items-center gap-4 lg:flex">
@@ -88,20 +93,20 @@ function HeroSection16() {
           <div className="container mx-auto mt-3 border-t border-blue-gray-50 px-2 pt-4">
             <ul className="flex flex-col gap-4">
               <NavItem>
-                <RectangleStackIcon className="h-5 w-5" />
-                Pages
+                <HomeIcon className="h-5 w-5" />
+                Home
               </NavItem>
               <NavItem>
-                <UserCircleIcon className="h-5 w-5" />
-                Account
+                <UserIcon className="h-5 w-5" />
+                About Us
               </NavItem>
               <NavItem>
-                <Squares2X2Icon className="h-5 w-5" />
-                Blocks
+                <StarIcon className="h-5 w-5" />
+                Testimonial
               </NavItem>
               <NavItem>
-                <CommandLineIcon className="h-5 w-5" />
-                Docs
+                <EnvelopeIcon className="h-5 w-5" />
+                Contact Us
               </NavItem>
             </ul>
             <div className="mt-6 mb-4 flex items-center gap-4">
@@ -112,31 +117,30 @@ function HeroSection16() {
         </Collapse>
       </Navbar>
       <header className="bg-white p-8">
-        <div className="grid mt-16 min-h-[82vh] w-full lg:h-[54rem] md:h-[34rem] place-items-stretch bg-[url('/image/bg-hero-17.svg')] bg-center bg-contain bg-no-repeat">
+        <div className="grid mt-16  w-full h-screen ">
           <div className="container mx-auto px-4 text-center">
             <Typography
               variant="h1"
               color="blue-gray"
               className="mx-auto my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl"
             >
-              Get ready to experience a new level of{" "}
-              <span className="text-green-500 leading-snug ">performance</span>{" "}
-              and{" "}
-              <span className="leading-snug text-green-500">functionality</span>
-              .
+              Explore diverse topics,{" "}
+              <span className="text-green-500 leading-snug ">engage</span>, and
+              be <span className="leading-snug text-green-500">inspired.</span>
+              Join us now!
             </Typography>
             <Typography
               variant="lead"
               className="mx-auto w-full !text-gray-500 lg:text-lg text-base"
             >
-              The time is now for it to be okay to be great. For being a bright
-              color. For standing out.
+              Dive into a world of captivating content, connect with like-minded
+              individuals, and unleash your curiosity today!
             </Typography>
             <div className="mt-8 grid w-full place-items-start md:justify-center">
               <div className="mb-2 flex w-full flex-col gap-4 md:flex-row">
                 <Input color="gray" label="Enter your email" size="lg" />
                 <Button color="gray" className="w-full px-4 md:w-[12rem]">
-                  get started
+                  Sign Up now!
                 </Button>
               </div>
             </div>

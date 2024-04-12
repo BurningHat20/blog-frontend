@@ -1,12 +1,12 @@
 import React from "react";
-import LandingPage from "./components/LandingPage";
-import LandingNav from "./components/LandingNav";
+
+import HeroSection16 from "./components/LandingPage";
 
 function App() {
   return (
     <div>
-      <LandingNav />
-      <LandingPage />
+      {/* <LandingNav /> */}
+      <HeroSection16 />
     </div>
   );
 }

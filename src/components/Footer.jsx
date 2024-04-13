@@ -1,15 +1,19 @@
 import React from "react";
 import Logo from "../assets/stack.png";
+import { Link } from "react-scroll";
 
 function Footer() {
   return (
     <div>
-      <footer className="bg-white">
+      <footer className="bg-black text-white">
         <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
-            <a
-              className="inline-block rounded-full bg-black p-2 text-white shadow transition hover:bg-gray-900 sm:p-3 lg:p-4"
-              href="#MainContent"
+            <Link 
+              to={"Home"} 
+              smooth={true}
+              duration={500}
+              className="inline-block rounded-full cursor-pointer bg-gray-100 p-2 text-black shadow transition hover:bg-gray-900 sm:p-3 lg:p-4"
+
             >
               <span className="sr-only">Back to top</span>
 
@@ -25,7 +29,7 @@ function Footer() {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="lg:flex lg:items-end lg:justify-between">
@@ -85,7 +89,7 @@ function Footer() {
           </div>
 
           <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-            Copyright &copy; 2022. All rights reserved.
+            Copyright &copy; 2024. All rights reserved
           </p>
         </div>
       </footer>

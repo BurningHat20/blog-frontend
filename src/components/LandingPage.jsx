@@ -102,8 +102,12 @@ function HeroSection16() {
             </NavItem>
           </ul>
           <div className="hidden items-center gap-4 lg:flex">
-            <Button variant="text">Log in</Button>
-            <Button color="gray">Sign Up</Button>
+            <Button variant="text">
+              <a href="https://stack-spot.vercel.app/">Login</a>
+            </Button>
+            <Button variant="text" className="bg-black text-white">
+              <a href="https://stack-spot.vercel.app/">Sign Up</a>
+            </Button>
           </div>
           <IconButton
             variant="text"
@@ -121,31 +125,42 @@ function HeroSection16() {
         <Collapse open={open}>
           <div className="container mx-auto mt-3 border-t border-blue-gray-50 px-2 pt-4">
             <ul className="flex flex-col gap-4">
-              <NavItem>
-                <HomeIcon className="h-5 w-5" />
-                Home
+              <NavItem >
+                <Link to="Home" smooth={true} duration={500} onClick={() => setOpen((prev) => !prev)}>
+                  <span className="hover:text-gray-500">Home</span>
+                </Link>
               </NavItem>
               <NavItem>
-                <UserIcon className="h-5 w-5" />
-                About Us
+                <Link to="AboutUs" smooth={true} duration={500} onClick={() => setOpen((prev) => !prev)}>
+
+                  <span className="hover:text-gray-500">About Us</span>
+                </Link>
               </NavItem>
               <NavItem>
-                <StarIcon className="h-5 w-5" />
-                Testimonial
+                <Link to="team" smooth={true} duration={500} onClick={() => setOpen((prev) => !prev)}>
+
+                  <span className="hover:text-gray-500">Team</span>
+                </Link>
               </NavItem>
               <NavItem>
-                <EnvelopeIcon className="h-5 w-5" />
-                Contact Us
+                <Link to="Contact" smooth={true} duration={500} onClick={() => setOpen((prev) => !prev)}>
+
+                  <span className="hover:text-gray-500">Contact Us</span>
+                </Link>
               </NavItem>
             </ul>
             <div className="mt-6 mb-4 flex items-center gap-4">
-              <Button variant="text">Log in</Button>
-              <Button color="gray">Sign Up</Button>
+              <Button variant="text">
+                <a href="https://stack-spot.vercel.app/">Login</a>
+              </Button>
+              <Button variant="text" className="bg-black hover:bg-gray-700 text-white">
+                <a href="https://stack-spot.vercel.app/">Sign Up</a>
+              </Button>
             </div>
           </div>
         </Collapse>
       </Navbar>
-      <header className="bg-gradient-to-b from-black to-gray-900 via-black h-screen p-8" id="Home">
+      <header className="bg-gradient-to-b from-black to-gray-900 via-black h-[90vh] p-8" id="Home">
         <div className="grid mt-16 w-full">
           <div className="container mx-auto px-4 text-center">
             <Typography

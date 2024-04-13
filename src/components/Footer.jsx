@@ -89,7 +89,7 @@ function Footer() {
           </div>
 
           <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-            Copyright &copy; 2024. All rights reserved.
+            Copyright &copy; 2024. All rights reserved
           </p>
         </div>
       </footer>

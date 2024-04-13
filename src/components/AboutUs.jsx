@@ -9,15 +9,19 @@ import {
   Wrench,
 } from "lucide-react";
 function AboutUs() {
+
+  const handleRedirect = () => {
+    window.location.href = "https://stack-spot.vercel.app/";
+  }
   return (
     <section
       id="AboutUs"
-      className="flex justify-center items-center bg-gray-100 h-screen"
+      className="flex pt-10 justify-center bg-gradient-to-b from-black to-gray-900 via-black items-center h-screen"
     >
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-            <h2 className="text-3xl font-bold sm:text-4xl">
+            <h2 className="text-3xl text-white font-bold  sm:text-4xl">
               What makes us special
             </h2>
             <p className="mt-4 text-gray-600">
@@ -26,12 +30,18 @@ function AboutUs() {
               your favorite platforms, and robust analytics, we're here to
               elevate your blogging experience.
             </p>
-            <Button
-              color="gray"
-              className="w-full mt-8  px-4 text-sm font-medium md:w-[12rem]"
-            >
-              Get Started Today
-            </Button>
+
+
+            <div onClick={handleRedirect} >
+              <Button
+
+                color="white"
+                className="w-full mt-8 font-bold px-4 text-sm md:w-[12rem]"
+              >
+                Get start today
+              </Button>
+            </div>
+
           </div>
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
@@ -43,7 +53,7 @@ function AboutUs() {
                 <Lightbulb className="h-6 w-6" />
               </span>
 
-              <h2 className="mt-2 font-bold">Simplicity</h2>
+              <h2 className="mt-2 font-bold text-white">Simplicity</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Streamlined design for effortless navigation.
@@ -58,7 +68,7 @@ function AboutUs() {
                 <MonitorSmartphone className="h-6 w-6" />
               </span>
 
-              <h2 className="mt-2 font-bold">Responsiveness</h2>
+              <h2 className="mt-2 font-bold  text-white">Responsiveness</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Optimal viewing on any device, anywhere.
@@ -73,7 +83,7 @@ function AboutUs() {
                 <Wrench className="h-6 w-6" />
               </span>
 
-              <h2 className="mt-2 font-bold">Flexibility</h2>
+              <h2 className="mt-2 font-bold  text-white">Flexibility</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Tailor your blog to your unique style.
@@ -88,7 +98,7 @@ function AboutUs() {
                 <Blocks className="h-6 w-6" />
               </span>
 
-              <h2 className="mt-2 font-bold">Integration</h2>
+              <h2 className="mt-2 font-bold  text-white">Integration</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Seamlessly connect with your favorite platforms.
@@ -103,7 +113,7 @@ function AboutUs() {
                 <Palette className="h-6 w-6" />
               </span>
 
-              <h2 className="mt-2 font-bold">Customization</h2>
+              <h2 className="mt-2 font-bold  text-white">Customization</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Craft your blog to reflect your personality.
@@ -118,7 +128,7 @@ function AboutUs() {
                 <LineChart className="h-6 w-6" />
               </span>
 
-              <h2 className="mt-2 font-bold">Analytics</h2>
+              <h2 className="mt-2 font-bold  text-white">Analytics</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Gain insights to refine your content strategy.

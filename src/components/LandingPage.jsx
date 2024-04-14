@@ -103,10 +103,10 @@ function HeroSection16() {
           </ul>
           <div className="hidden items-center gap-4 lg:flex">
             <Button variant="text">
-              <a href="https://stack-spot.vercel.app/">Login</a>
+              <a href="https://stack-spot.vercel.app/login">Login</a>
             </Button>
             <Button variant="text" className="bg-black text-white">
-              <a href="https://stack-spot.vercel.app/">Sign Up</a>
+              <a href="https://stack-spot.vercel.app/register">Sign Up</a>
             </Button>
           </div>
           <IconButton
@@ -151,10 +151,10 @@ function HeroSection16() {
             </ul>
             <div className="mt-6 mb-4 flex items-center gap-4">
               <Button variant="text">
-                <a href="https://stack-spot.vercel.app/">Login</a>
+                <a href="https://stack-spot.vercel.app/login">Login</a>
               </Button>
               <Button variant="text" className="bg-black hover:bg-gray-700 text-white">
-                <a href="https://stack-spot.vercel.app/">Sign Up</a>
+                <a href="https://stack-spot.vercel.app/register">Sign Up</a>
               </Button>
             </div>
           </div>

@@ -137,9 +137,6 @@ function Testimonial() {
                 </div>
 
                 <p className="text-gray-500 mb-4">Full Stack Developer</p>
-                <p className="text-gray-400">
-                  Passionate about creating amazing web experiences.
-                </p>
               </motion.div>
             ))}
           </motion.div>

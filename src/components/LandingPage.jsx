@@ -103,10 +103,10 @@ function HeroSection16() {
           </ul>
           <div className="hidden items-center gap-4 lg:flex">
             <Button variant="text">
-              <a href="https://stack-spot.vercel.app/">Login</a>
+              <a href="https://stack-spot.vercel.app/login">Login</a>
             </Button>
             <Button variant="text" className="bg-black text-white">
-              <a href="https://stack-spot.vercel.app/">Sign Up</a>
+              <a href="https://stack-spot.vercel.app/register">Sign Up</a>
             </Button>
           </div>
           <IconButton
@@ -151,10 +151,10 @@ function HeroSection16() {
             </ul>
             <div className="mt-6 mb-4 flex items-center gap-4">
               <Button variant="text">
-                <a href="https://stack-spot.vercel.app/">Login</a>
+                <a href="https://stack-spot.vercel.app/login">Login</a>
               </Button>
               <Button variant="text" className="bg-black hover:bg-gray-700 text-white">
-                <a href="https://stack-spot.vercel.app/">Sign Up</a>
+                <a href="https://stack-spot.vercel.app/register">Sign Up</a>
               </Button>
             </div>
           </div>
@@ -169,13 +169,13 @@ function HeroSection16() {
               className="mx-auto my-6 w-full leading-snug text-white !text-2xl lg:max-w-3xl lg:!text-5xl"
             >
               Explore diverse topics,{" "}
-              <span className="text-green-500 leading-snug ">engage</span>, and
-              be <span className="leading-snug text-green-500">inspired.</span>
+              <span className="text-green-500 leading-snug ">Engage</span>, and
+              be <span className="leading-snug text-green-500">Inspired.</span>
               Join us now!
             </Typography>
             <Typography
               variant="lead"
-              className="mx-auto w-full !text-gray-500 lg:text-lg text-base"
+              className="mx-auto md:w-2/5 !text-gray-500 lg:text-lg text-base"
             >
               Dive into a world of captivating content, connect with like-minded
               individuals, and unleash your curiosity today!

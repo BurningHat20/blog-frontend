@@ -37,7 +37,7 @@ To get started with this project, follow these steps:
 2. **Navigate to the project directory:**
 
    ```bash
-   cd your-repository
+   cd blog-frontend
    ```
 
 3. **Install dependencies:**
@@ -58,21 +58,36 @@ To get started with this project, follow these steps:
 
 ```
 blog-frontend/
+├── node_modules/
 ├── public/
-│   ├── index.html
-│   └── ...
+│   ├── spot-stack.png
+│   └── vite.svg
 ├── src/
+│   ├── assets/
+│   │   ├── background.svg
+│   │   ├── react.svg
+│   │   ├── spot-stack.png
+│   │   ├── vansh-chavda.jpg
+│   │   └── yash-gohel.jpg
 │   ├── components/
-│   │   ├── LandingPage.jsx
 │   │   ├── AboutUs.jsx
-│   │   ├── Testimonial.jsx
-│   │   ├── ContactUs.jsx
-│   │   └── Footer.jsx
+│   │   ├── Contributor.jsx
+│   │   ├── Footer.jsx
+│   │   ├── LandingPage.jsx
+│   │   └── Team.jsx
+│   ├── App.css
 │   ├── App.jsx
-│   └── index.jsx
-├── README.md
+│   ├── index.css
+│   └── main.jsx
+├── .eslintrc.js
+├── .gitignore
+├── index.html
+├── package-lock.json
 ├── package.json
-└── ...
+├── postcss.config.js
+├── tailwind.config.js
+└── vite.config.js
+
 ```
 
 ## 🤝 Contributing

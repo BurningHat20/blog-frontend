@@ -14,8 +14,8 @@ import {
   EnvelopeIcon,
 } from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Logo from "../assets/stack.png";
-import { Link } from 'react-scroll';
+import Logo from "../assets/spot-stack.png";
+import { Link } from "react-scroll";
 import { Users } from "lucide-react";
 
 function NavItem({ children }) {
@@ -56,15 +56,16 @@ function HeroSection16() {
 
   const handleRedirect = () => {
     window.location.href = "https://stack-spot.vercel.app/";
-  }
+  };
 
   return (
     <>
       <Navbar
         shadow={false}
         fullWidth
-        className={`border-0 text-white sticky top-0 z-50 ${isScrolled ? "shadow-lg" : ""
-          }`}
+        className={`border-0 text-white sticky top-0 z-50 ${
+          isScrolled ? "shadow-lg" : ""
+        }`}
       >
         <div className="container mx-auto flex items-center justify-between">
           <Typography
@@ -77,26 +78,23 @@ function HeroSection16() {
             Stack Spot
           </Typography>
           <ul className="ml-10 hidden  lg:flex flex-row gap-10 ">
-            <NavItem >
+            <NavItem>
               <Link to="Home" smooth={true} duration={500}>
                 <span className="hover:text-gray-500">Home</span>
               </Link>
             </NavItem>
             <NavItem>
               <Link to="AboutUs" smooth={true} duration={500}>
-
                 <span className="hover:text-gray-500">About Us</span>
               </Link>
             </NavItem>
             <NavItem>
               <Link to="team" smooth={true} duration={500}>
-
                 <span className="hover:text-gray-500">Team</span>
               </Link>
             </NavItem>
             <NavItem>
               <Link to="Contact" smooth={true} duration={500}>
-
                 <span className="hover:text-gray-500">Contribute</span>
               </Link>
             </NavItem>
@@ -125,26 +123,43 @@ function HeroSection16() {
         <Collapse open={open}>
           <div className="container mx-auto mt-3 border-t border-blue-gray-50 px-2 pt-4">
             <ul className="flex flex-col gap-4">
-              <NavItem >
-                <Link to="Home" smooth={true} duration={500} onClick={() => setOpen((prev) => !prev)}>
+              <NavItem>
+                <Link
+                  to="Home"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen((prev) => !prev)}
+                >
                   <span className="hover:text-gray-500">Home</span>
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="AboutUs" smooth={true} duration={500} onClick={() => setOpen((prev) => !prev)}>
-
+                <Link
+                  to="AboutUs"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen((prev) => !prev)}
+                >
                   <span className="hover:text-gray-500">About Us</span>
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="team" smooth={true} duration={500} onClick={() => setOpen((prev) => !prev)}>
-
+                <Link
+                  to="team"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen((prev) => !prev)}
+                >
                   <span className="hover:text-gray-500">Team</span>
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="Contact" smooth={true} duration={500} onClick={() => setOpen((prev) => !prev)}>
-
+                <Link
+                  to="Contact"
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setOpen((prev) => !prev)}
+                >
                   <span className="hover:text-gray-500">Contribute</span>
                 </Link>
               </NavItem>
@@ -153,14 +168,20 @@ function HeroSection16() {
               <Button variant="text">
                 <a href="https://stack-spot.vercel.app/login">Login</a>
               </Button>
-              <Button variant="text" className="bg-black hover:bg-gray-700 text-white">
+              <Button
+                variant="text"
+                className="bg-black hover:bg-gray-700 text-white"
+              >
                 <a href="https://stack-spot.vercel.app/register">Sign Up</a>
               </Button>
             </div>
           </div>
         </Collapse>
       </Navbar>
-      <header className="bg-gradient-to-b from-black to-gray-900 via-black h-[90vh] p-8" id="Home">
+      <header
+        className="bg-gradient-to-b from-black to-gray-900 via-black h-[90vh] p-8"
+        id="Home"
+      >
         <div className="grid mt-16 w-full">
           <div className="container mx-auto px-4 text-center">
             <Typography

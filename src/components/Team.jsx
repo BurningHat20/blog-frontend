@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import vansh from "../assets/me.jpg";
-import yash from "../assets/yash.jpg";
+import vansh from "../assets/vansh-chavda.jpg";
+import yash from "../assets/yash-gohel.jpg";
 import { Github, Linkedin, Instagram } from "lucide-react"; // Import Lucide React icons
 import { FaXTwitter } from "react-icons/fa6"; // Import FaTwitter icon
 

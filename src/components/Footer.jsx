@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/stack.png";
+import Logo from "../assets/spot-stack.png";
 import { Link } from "react-scroll";
 
 function Footer() {

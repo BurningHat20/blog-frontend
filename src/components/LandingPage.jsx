@@ -97,7 +97,7 @@ function HeroSection16() {
             <NavItem>
               <Link to="Contact" smooth={true} duration={500}>
 
-                <span className="hover:text-gray-500">Contact Us</span>
+                <span className="hover:text-gray-500">Contribute</span>
               </Link>
             </NavItem>
           </ul>
@@ -145,7 +145,7 @@ function HeroSection16() {
               <NavItem>
                 <Link to="Contact" smooth={true} duration={500} onClick={() => setOpen((prev) => !prev)}>
 
-                  <span className="hover:text-gray-500">Contact Us</span>
+                  <span className="hover:text-gray-500">Contribute</span>
                 </Link>
               </NavItem>
             </ul>

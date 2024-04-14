@@ -7,7 +7,7 @@ function ContactUs() {
     <div id="contact" name="Contact">
       <section className="bg-gradient-to-b text-white h-auto from-black to-gray-900 via-black">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <h1 className="text-5xl font-bold text-center mb-11">Contact Us</h1>
+          <h1 className="text-5xl font-bold text-center mb-11">Become a contributor</h1>
           <div className="flex justify-center space-x-8">
             <div className="flex flex-col items-center mb-10 gap-5">
               <div className="w-full max-w-sm">

@@ -45,7 +45,7 @@ const cardVariants = {
   },
 };
 
-function Testimonial() {
+function Team() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -146,4 +146,4 @@ function Testimonial() {
   );
 }
 
-export default Testimonial;
+export default Team;

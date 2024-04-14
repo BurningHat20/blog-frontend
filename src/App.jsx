@@ -2,8 +2,8 @@ import React from "react";
 
 import HeroSection16 from "./components/LandingPage";
 import AboutUs from "./components/AboutUs";
-import Testimonial from "./components/Testimonial";
-import ContactUs from "./components/ContactUs";
+import Team from "./components/Team";
+import Contributor from "./components/Contributor";
 import Footer from "./components/Footer";
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
     <div>
       <HeroSection16 />
       <AboutUs />
-      <Testimonial />
-      <ContactUs />
+      <Team />
+      <Contributor />
       <Footer />
     </div>
   );

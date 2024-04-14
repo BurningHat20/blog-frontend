@@ -8,12 +8,11 @@ function Footer() {
       <footer className="bg-black text-white">
         <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
-            <Link 
-              to={"Home"} 
+            <Link
+              to={"Home"}
               smooth={true}
               duration={500}
               className="inline-block rounded-full cursor-pointer bg-gray-100 p-2 text-black shadow transition hover:bg-gray-900 sm:p-3 lg:p-4"
-
             >
               <span className="sr-only">Back to top</span>
 
@@ -52,7 +51,6 @@ function Footer() {
                   to="Home"
                   smooth={true}
                   duration={500}
-
                 >
                   {" "}
                   Home{" "}
@@ -91,7 +89,7 @@ function Footer() {
                   duration={500}
                 >
                   {" "}
-                  Contact Us{" "}
+                  Contribute{" "}
                 </Link>
               </li>
             </ul>

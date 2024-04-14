@@ -47,43 +47,52 @@ function Footer() {
 
             <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                <Link
+                  className="text-gray-700 cursor-pointer transition hover:text-gray-700/75"
+                  to="Home"
+                  smooth={true}
+                  duration={500}
+
                 >
                   {" "}
                   Home{" "}
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                <Link
+                  className="text-gray-700 cursor-pointer transition hover:text-gray-700/75"
+                  to="AboutUs"
+                  smooth={true}
+                  duration={500}
                 >
                   {" "}
                   About Us{" "}
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                <Link
+                  className="text-gray-700 cursor-pointer transition hover:text-gray-700/75"
+                  to="team"
+                  smooth={true}
+                  duration={500}
                 >
                   {" "}
-                  Testimonial{" "}
-                </a>
+                  Team{" "}
+                </Link>
               </li>
 
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                <Link
+                  className="text-gray-700 cursor-pointer transition hover:text-gray-700/75"
+                  to="contact"
+                  smooth={true}
+                  duration={500}
                 >
                   {" "}
                   Contact Us{" "}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
